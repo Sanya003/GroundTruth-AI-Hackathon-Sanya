@@ -33,3 +33,12 @@ We are building a system that analyzes Facebook ad campaign data to generate ins
 ### **6. Automated Report Builder (PPTX / PDF)**
 - Creates an executive-style PowerPoint report that contains Title slide, KPI slide, Insights slide, Visuals slide(s).
 - Optionally convert PPTX to PDF using system tools.
+
+## Usage
+
+1. Run this command:
+   ```bash
+   python main.py --inputs data.csv --out outputs/reports/report.pptx
+
+
+
