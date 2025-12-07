@@ -20,7 +20,6 @@ We are building a system that analyzes Facebook ad campaign data to generate ins
 - Derive new metrics if needed (e.g., CTR, conversion rate).
 - Encode categorical variables and scale numeric features for modeling.
 
-
 ### **4. Analytics & Visualization Layer**
 - Extracts top-level KPIs (impressions, clicks, spend, CTR, CPC, etc.).
 - Generates meaningful visualizations like Time-series trends, Top-performing categories/campaigns, Correlation heatmaps (optional).
@@ -34,11 +33,36 @@ We are building a system that analyzes Facebook ad campaign data to generate ins
 - Creates an executive-style PowerPoint report that contains Title slide, KPI slide, Insights slide, Visuals slide(s).
 - Optionally convert PPTX to PDF using system tools.
 
-## Usage
+## Tech Stack
+* Language: Python 3.10
+* Data Engine: Pandas
+* AI Model: Google Gemini 2.5 Flash (via google-genai)
+* Visualization: Matplotlib, Seaborn
 
-1. Run this command:
+## How to Run
+
+1. Clone the Repository:
    ```bash
-   python main.py --inputs data.csv --out outputs/reports/report.pptx
+   git clone https://github.com/Sanya003/GroundTruth-AI-Hackathon-Sanya.git
+   cd GroundTruth-AI-Hackathon-Sanya
+   
+2. Install Dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+3. Set API Key:
+   ```bash
+   export GEMINI_API_KEY="your_key_here"
+
+4. Run the Builder:
+   * Single Input file
+   ```bash
+   python main.py --inputs data/data.csv --out outputs/report.pptx
+   ```
+   * Multiple Input files
+   ```bash
+   python main.py --inputs data/data.csv data/extra.xlsx data/campaigns.sqlite --out outputs/report.pptx
+   ```
 
 
 
