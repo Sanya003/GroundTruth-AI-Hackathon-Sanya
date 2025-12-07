@@ -1,0 +1,6 @@
+pandas
+matplotlib
+python-pptx
+google-genai
+pypdf2
+openpyxl
